@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .none-template {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 offset-4">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h4>TODO Book</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group mt-3">
+                            <input type="text" placeholder="Enter book title" class="form-control" id="b_title">
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="number" placeholder="Enter book price" class="form-control" id="b_price">
+                        </div>
+                        <div class="form-group mt-3">
+                            <button class="btn btn-success form-control" id="btn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="row" id="tbl-data"></div>
+
+    </div>
+    <div class="none-template">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Title: $title</div>
+                </div>
+                <div class="card-body">
+                    <p>Title: {title}</p>
+                    <p>Price: {price}</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-danger" onclick="removeBook({id})">Remove</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="TodoList.js"></script>
+</body>
